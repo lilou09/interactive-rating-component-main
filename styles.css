@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+:root {
+  --orange: hsl(25, 97%, 53%);
+
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(217, 12%, 63%);
+  --medium-grey: hsl(216, 12%, 54%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+p {
+  line-height: 1.6;
+  color: var(--medium-grey);
+  margin-bottom: 1.3rem;
+}
+h1 {
+  margin-bottom: 1.3rem;
+}
+button {
+  font-family: inherit;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--very-dark-blue);
+  min-height: 100vh;
+  color: var(--white);
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.wrapper,
+.thanks_container {
+  background-color: var(--dark-blue);
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.wrapper img {
+  background-color: hsl(222, 9%, 29%);
+  padding: 0.6rem;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  width: 2.6rem;
+  height: 2.6rem;
+  padding-top: 0.2rem;
+  border-radius: 50%;
+  border: none;
+  color: var(--medium-grey);
+  background-color: hsl(222, 16%, 32%);
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.btn:focus {
+  color: var(--white);
+  background-color: var(--light-grey);
+}
+
+.btn:hover {
+  color: var(--white);
+  background-color: var(--orange);
+}
+
+.btn-submit {
+  background-color: var(--orange);
+  color: white;
+  width: 100%;
+  padding: 0.7rem 0 0.5rem;
+  border-radius: 30px;
+  text-transform: uppercase;
+  border: none;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.thanks_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.gris {
+  display: inline-block;
+  background-color: hsl(222, 16%, 32%);
+  border-radius: 30px;
+  padding: 0.2rem 1rem 0;
+  margin-top: 1.4rem;
+  color: var(--orange);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-submit:hover {
+  background-color: var(--white);
+  color: var(--orange);
+}
+
+.hidden {
+  display: none;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 2rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
